@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Variables aleatorias | Vamos con la binomial </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Aurora Pérez López" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-auto-math" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Vamos con la binomial</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Descripción</a></li>
+   <li class="current-page-parent"><a href="actividades.html" class="current-page-parent daddy">Actividades</a>
+   <ul>
+      <li id="active"><a href="variables_aleatorias.html" class="active daddy">Variables aleatorias</a>
+      <ul>
+         <li><a href="qu_tipo_de_variables_aleatorias_hay.html" class="no-ch">¿Qué tipo de variables aleatorias hay?</a></li>
+      </ul>
+      </li>
+      <li><a href="funcin_de_probabilidad.html" class="no-ch">Función de Probabilidad</a></li>
+      <li><a href="esperanza_matemtica.html" class="daddy">Esperanza matemática</a>
+      <ul class="other-section">
+         <li><a href="esperanza_y_varianza.html" class="no-ch">Esperanza y varianza</a></li>
+         <li><a href="varianza_y_desviacin_tpica.html" class="no-ch">Varianza y desviación típica</a></li>
+      </ul>
+      </li>
+      <li><a href="nmeros_combinatorios.html" class="no-ch">Números combinatorios</a></li>
+      <li><a href="distribucin_de_bernouilli.html" class="no-ch">Distribución de Bernouilli</a></li>
+      <li><a href="distribucin_binomial.html" class="daddy">Distribución binomial</a>
+      <ul class="other-section">
+         <li><a href="actividades_sobre_la_binomial.html" class="no-ch">Actividades sobre la binomial</a></li>
+      </ul>
+      </li>
+      <li><a href="proyecto_final.html" class="no-ch">Proyecto final</a></li>
+   </ul>
+   </li>
+   <li><a href="gua_de_la_unidad_didctica.html" class="no-ch">Guía de la unidad didáctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_tipo_de_variables_aleatorias_hay.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Variables aleatorias</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id11">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">¿Cuántos casos posibles hay?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Podemos ver, cuáles son las posibles parejas de vocales que cada jugador puede coger, así como, la suma del valor de dichas vocales y el último dígito que tiene la suma:</p>
+<p></p>
+<table border="1" style="height: 75px; width: 96.531%; border-style: solid; border-color: #000000;" class="exe-table-minimalist">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 14.2014%; text-align: center; height: 10px;"><strong><span style="color: #800080;"><span style="font-size: 10pt;">Posibles resultados del experimento</span> </span></strong></td>
+<td style="width: 7.75466%; text-align: center; height: 10px;"><span style="font-size: 14pt;"><strong><span style="color: #800080;">AE</span></strong></span></td>
+<td style="width: 8.35483%; text-align: center; height: 10px;"><strong><span style="color: #800080;">AI</span></strong></td>
+<td style="width: 7.42765%; text-align: center; height: 10px;"><strong><span style="color: #800080;">AO</span></strong></td>
+<td style="width: 8.59382%; text-align: center; height: 10px;"><strong><span style="color: #800080;">AU</span></strong></td>
+<td style="width: 9.13592%; text-align: center; height: 10px;"><strong><span style="color: #800080;">EI</span></strong></td>
+<td style="width: 8.77514%; text-align: center; height: 10px;"><strong><span style="color: #800080;">EO</span></strong></td>
+<td style="width: 9.12511%; text-align: center; height: 10px;"><strong><span style="color: #800080;">EU</span></strong></td>
+<td style="width: 8.51269%; text-align: center; height: 10px;"><strong><span style="color: #800080;">IO</span></strong></td>
+<td style="width: 10%; text-align: center; height: 10px;"><strong><span style="color: #800080;">IU</span></strong></td>
+<td style="width: 10%; text-align: center; height: 10px;"><strong><span style="color: #800080;">OU</span></strong></td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 14.2014%; text-align: center; height: 18px;"><span style="color: #800080; font-size: 10pt;"><b>Suma</b></span></td>
+<td style="width: 7.75466%; text-align: center; height: 18px;"><strong><span style="color: #800080;">6</span></strong></td>
+<td style="width: 8.35483%; text-align: center; height: 18px;"><strong><span style="color: #800080;">10</span></strong></td>
+<td style="width: 7.42765%; text-align: center; height: 18px;"><strong><span style="color: #800080;"> 16</span></strong></td>
+<td style="width: 8.59382%; text-align: center; height: 18px;"><strong><span style="color: #800080;"> 22</span></strong></td>
+<td style="width: 9.13592%; text-align: center; height: 18px;"><strong><span style="color: #800080;">14 </span></strong></td>
+<td style="width: 8.77514%; text-align: center; height: 18px;"><strong><span style="color: #800080;"> 20</span></strong></td>
+<td style="width: 9.12511%; text-align: center; height: 18px;"><strong><span style="color: #800080;">26 </span></strong></td>
+<td style="width: 8.51269%; text-align: center; height: 18px;"><strong><span style="color: #800080;"> 24</span></strong></td>
+<td style="width: 10%; text-align: center; height: 18px;"><strong><span style="color: #800080;">30 </span></strong></td>
+<td style="width: 10%; text-align: center; height: 18px;"><strong><span style="color: #800080;">36 </span></strong></td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 14.2014%; text-align: center; height: 47px;"><span style="color: #800080; font-size: 10pt;"><b>Último dígito</b></span></td>
+<td style="width: 7.75466%; text-align: center; height: 47px;"><strong><span style="color: #800080;">6</span></strong></td>
+<td style="width: 8.35483%; text-align: center; height: 47px;"><strong><span style="color: #800080;">0</span></strong></td>
+<td style="width: 7.42765%; text-align: center; height: 47px;"><strong><span style="color: #800080;">6</span></strong></td>
+<td style="width: 8.59382%; text-align: center; height: 47px;"><strong><span style="color: #800080;">2</span></strong></td>
+<td style="width: 9.13592%; text-align: center; height: 47px;"><strong><span style="color: #800080;">4</span></strong></td>
+<td style="width: 8.77514%; text-align: center; height: 47px;"><strong><span style="color: #800080;">0</span></strong></td>
+<td style="width: 9.12511%; text-align: center; height: 47px;"><strong><span style="color: #800080;">6</span></strong></td>
+<td style="width: 8.51269%; text-align: center; height: 47px;"><strong><span style="color: #800080;">4</span></strong></td>
+<td style="width: 10%; text-align: center; height: 47px;"><strong><span style="color: #800080;">0</span></strong></td>
+<td style="width: 10%; text-align: center; height: 47px;"><strong><span style="color: #800080;">6</span></strong></td>
+</tr>
+</tbody>
+</table></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Por ejemplo podría darse la siguiente jugada:</p>
+<p>Jugador 1 : Coge dos cartas y resultan ser EO, y sumando el valor de las cartas obtenemos: 20.</p>
+<p>Jugador 2: En su papel apuntó que el último dígito de la suma de las cartas sería un 0, por lo que gana un punto.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id12">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Variable aleatoria</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Vemos que en este caso, los posibles últimos dígitos de sumar dos cartas cualesquiera son el: 0,2,4,6. </p>
+<p>Podemos considerar la variable:  \(X = \) <em>último dígito de la suma del valor las dos cartas.</em></p>
+<p><em> </em>Podemos dar la tabla de frecuencias absolutas y relativas de la variable \(X \), que será:</p>
+<table border="1" style="height: 158px; width: 85.1259%;" class="exe-table">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 10%; height: 18px; text-align: center;"><span style="color: #ff6600;"><strong>Último dígito</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>0</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>2</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>4</strong></span></td>
+<td style="width: 14.6561%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>6</strong></span></td>
+<td style="width: 9.4709%; text-align: center;"><span style="color: #ff6600;"><strong>Total</strong></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 10%; height: 18px; text-align: center;"><span style="color: #ff6600;"><strong>Frecuencia absoluta</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>3</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>1</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>2</strong></span></td>
+<td style="width: 14.6561%; height: 18px; text-align: center;"><span style="color: #333399;"><strong>4</strong></span></td>
+<td style="width: 9.4709%; text-align: center;"><span style="color: #333399;"><strong>10</strong></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 10%; height: 18px; text-align: center;"><span style="color: #ff6600;"><strong>Frecuencia relativa</strong></span></td>
+<td style="width: 20%; height: 18px; text-align: center;"><strong><span style="color: #333399;"> \( \frac {3}{10} \)</span></strong></td>
+<td style="width: 20%; height: 18px; text-align: center;"><strong><span style="color: #333399;"> \( \frac {1} {10} \)</span></strong></td>
+<td style="width: 20%; height: 18px; text-align: center;"><strong><span style="color: #333399;">\( \frac {2} {10} \)</span></strong></td>
+<td style="width: 14.6561%; height: 18px; text-align: center;"><strong><span style="color: #333399;">\( \frac {4} {10} \)</span></strong></td>
+<td style="width: 9.4709%; text-align: center;"><strong><span style="color: #333399;">1</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_aprenderaprender" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_aprenderaprender.svg)"><h1 class="iDeviceTitle">Definición de variable aleatoria</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Esta variable \(X \) recibirá el nombre de <em><strong>variable aleatoria. </strong></em>Una variable aleatoria será una aplicación que nos permitirá asociar un número real a un resultado de un experimento aleatorio a partir de ciertas reglas. Esta variable aleatoria, se denotará por  \(X \), \(Y\) o \(Z \). Los posibles resultados de un experimento aleatorio se denotarán con la letra \( \Omega \). </p>
+<p>En nuestro ejemplo, el conjunto \( \Omega \) se formará por las posibles parejas de cartas , es decir, \( \Omega  = \{AE, AI, AO,AU,EI,EO,EU,IO,IU,OU \} \) . En este caso, tenemos que:</p>
+<p><img src="vA.jpg" alt="" width="893" height="602" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">Definición de distribución de probabilidad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_126_2" class="block iDevice_content">
+<div class="exe-text"><p>La distribución de probabilidad de una variable aleatoria asociada a un experimento aleatorio se corresponde con la el valor de las frecuencias relativas que obtenemos cuando repetimos el experimento un número muy grande de veces. Es decir, una distribución de probabilidad de una variable aleatoria será una función que a cada uno de los sucesos del experimento aleatorio le asignará una probabilidad.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p></p>
+<p>Esto podemos verlo para el  juego de las vocales. Supongamos que mi compañero y yo jugamos 5 rondas y obtenemos lo siguiente:</p>
+<p>El jugador 1 saca las cartas A y E y el jugador 2 había predicho que saldría como último dígito un 0, por lo que ha fallado. </p>
+<p>En la siguiente ronda el jugador 2 extrae las cartas O y A, y el jugador uno predice que el último dígito de la suma de las cartas es 6, por lo que gana un punto.</p>
+<p>En la siguiente ronda el jugador uno extrae las cartas I y A, y el jugador dos predice que el último dígito de la suma de las cartas es 0, por lo que falla.</p>
+<p>En la siguiente ronda el jugador dos extrae las cartas E y A, y el jugador uno predice que el último dígito de la suma de las cartas es 6, por lo que gana un punto.</p>
+<p>En la ronda el jugador uno extrae las cartas E y U, y el jugador dos predice que el último dígito de la suma de las cartas es 6, por lo que gana un punto.</p>
+<table border="1" style="height: 75px; width: 74.6671%;" height="235" class="exe-table-minimalist">
+<tbody>
+<tr style="height: 33px;">
+<td style="width: 16.0911%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">Elección de las cartas</span></td>
+<td style="width: 12.4803%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">AE</span></td>
+<td style="width: 14.2857%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">OA</span></td>
+<td style="width: 14.2857%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">IA</span></td>
+<td style="width: 14.2857%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">EA</span></td>
+<td style="width: 14.2857%; height: 33px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">EU</span></td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 16.0911%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">Suma del valor de las cartas</span></td>
+<td style="width: 12.4803%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">16</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">10</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">26</span></td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 16.0911%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">Último dígito</span></td>
+<td style="width: 12.4803%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+<td style="width: 14.2857%; height: 21px; text-align: center;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+</tr>
+</tbody>
+</table>
+<p>Las frecuencias relativas y absolutas asociadas a la variable \(X \) son:</p>
+<table border="1" style="height: 135px; width: 36.5317%;" height="135" class="exe-table-minimalist">
+<tbody>
+<tr>
+<td style="width: 15.8877%;"><span style="font-size: 12pt; color: #ff6600;">Último dígito</span></td>
+<td style="width: 5.98975%;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 6.14695%;"><span style="font-size: 12pt; color: #ff6600;">2</span></td>
+<td style="width: 6.13703%;"><span style="font-size: 12pt; color: #ff6600;">4</span></td>
+<td style="width: 7.00121%;"><span style="font-size: 12pt; color: #ff6600;">6</span></td>
+</tr>
+<tr>
+<td style="width: 15.8877%;"><span style="font-size: 12pt; color: #ff6600;">Frecuencia absoluta</span></td>
+<td style="width: 5.98975%;"><span style="font-size: 12pt; color: #ff6600;">1</span></td>
+<td style="width: 6.14695%;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 6.13703%;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 7.00121%;"><span style="font-size: 12pt; color: #ff6600;">4</span></td>
+</tr>
+<tr>
+<td style="width: 15.8877%;"><span style="font-size: 12pt; color: #ff6600;">Frecuencia relativa</span></td>
+<td style="width: 5.98975%;"><span style="font-size: 12pt; color: #ff6600;">1/5</span></td>
+<td style="width: 6.14695%;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 6.13703%;"><span style="font-size: 12pt; color: #ff6600;">0</span></td>
+<td style="width: 7.00121%;"><span style="font-size: 12pt; color: #ff6600;">4/5</span></td>
+</tr>
+</tbody>
+</table>
+<p>Cualquier experimento finito que hagamos de nuestro juego nos ofrecerá una distribución de probabilidad similar a la que aparece en la tabla superior, pues no siempre vamos a obtener todos los resultados posibles, es decir, vemos que las frecuencias relativas y absolutas que aparecen son diferentes a las que se muestran en la tabla del principio de esta página, la razón:</p>
+<p>En la tabla del principio hemos considerado <em><strong>TODOS</strong></em> las posibles parejas de cartas que podemos obtener !si jugáramos durante cientos de partidas o infinitas!.  Si jugásemos un número finito  y suficientemente grande de veces a nuestro juego podríamos obtener todas las parejas de cartas y así veríamos cómo las frecuencias relativas oscilan y se acercan a las probabilidades teóricas que aparecen en la primera tabla de esta sección.</p>
+<p></p>
+<p><img src="excla.jpg" alt="" width="27" height="28" />Por ello, ! debemos considerar todos los resultados de nuestro experimento si queremos obtener la distribución de probabilidad de una variable aleatoria.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_tipo_de_variables_aleatorias_hay.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
